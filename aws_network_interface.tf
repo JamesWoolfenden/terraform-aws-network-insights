@@ -6,4 +6,3 @@ resource "aws_network_interface" "source" {
 resource "aws_network_interface" "destination" {
   subnet_id = var.destination_subnet_id
 }
-
