@@ -87,12 +87,16 @@ resource "aws_iam_policy" "terraform_pike" {
                 "cloudformation:DescribeStacks",
                 "cloudformation:ListStackResources"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         },
         {
             "Sid": "VisualEditor1",
             "Effect": "Allow",
             "Action": [
+                "ec2:AssignIpv6Addresses",
+                "ec2:AssignPrivateIpAddresses",
                 "ec2:CreateNetworkInsightsAccessScope",
                 "ec2:CreateNetworkInsightsPath",
                 "ec2:CreateNetworkInterface",
@@ -137,11 +141,17 @@ resource "aws_iam_policy" "terraform_pike" {
                 "ec2:GetNetworkInsightsAccessScopeAnalysisFindings",
                 "ec2:GetNetworkInsightsAccessScopeContent",
                 "ec2:GetTransitGatewayRouteTablePropagations",
+                "ec2:ModifyNetworkInterfaceAttribute",
+                "ec2:ModifyPublicIpDnsNameOptions",
                 "ec2:SearchTransitGatewayRoutes",
                 "ec2:StartNetworkInsightsAccessScopeAnalysis",
-                "ec2:StartNetworkInsightsAnalysis"
+                "ec2:StartNetworkInsightsAnalysis",
+                "ec2:UnassignIpv6Addresses",
+                "ec2:UnassignPrivateIpAddresses"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         },
         {
             "Sid": "VisualEditor2",
@@ -155,7 +165,9 @@ resource "aws_iam_policy" "terraform_pike" {
                 "elasticloadbalancing:DescribeTargetGroups",
                 "elasticloadbalancing:DescribeTargetHealth"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         },
         {
             "Sid": "VisualEditor3",
@@ -169,7 +181,9 @@ resource "aws_iam_policy" "terraform_pike" {
                 "network-firewall:ListFirewalls",
                 "network-firewall:ListRuleGroups"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         },
         {
             "Sid": "VisualEditor4",
@@ -177,7 +191,9 @@ resource "aws_iam_policy" "terraform_pike" {
             "Action": [
                 "resource-groups:ListGroupResources"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         },
         {
             "Sid": "VisualEditor5",
@@ -185,7 +201,9 @@ resource "aws_iam_policy" "terraform_pike" {
             "Action": [
                 "tag:GetResources"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         },
         {
             "Sid": "VisualEditor6",
@@ -194,7 +212,9 @@ resource "aws_iam_policy" "terraform_pike" {
                 "tiros:CreateQuery",
                 "tiros:GetQueryAnswer"
             ],
-            "Resource": "*"
+            "Resource": [
+                "*"
+            ]
         }
     ]
 })
