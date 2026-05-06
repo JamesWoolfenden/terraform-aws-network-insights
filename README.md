@@ -1,13 +1,11 @@
 # terraform-aws-network-insights
 
-[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-network-insights/workflows/Verify%20and%20Bump/badge.svg?branch=master)](https://github.com/JamesWoolfenden/terraform-aws-network-insights)
+[![Build Status](https://github.com/JamesWoolfenden/terraform-aws-network-insights/workflows/Verify/badge.svg?branch=main)](https://github.com/JamesWoolfenden/terraform-aws-network-insights)
 [![Latest Release](https://img.shields.io/github/release/JamesWoolfenden/terraform-aws-network-insights.svg)](https://github.com/JamesWoolfenden/terraform-aws-network-insights/releases/latest)
 [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/JamesWoolfenden/terraform-aws-network-insights.svg?label=latest)](https://github.com/JamesWoolfenden/terraform-aws-network-insights/releases/latest)
 ![Terraform Version](https://img.shields.io/badge/tf-%3E%3D0.14.0-blue.svg)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/JamesWoolfenden/terraform-aws-network-insights/cis_aws)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-network-insights&benchmark=CIS+AWS+V1.2)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![checkov](https://img.shields.io/badge/checkov-verified-brightgreen)](https://www.checkov.io/)
-[![Infrastructure Tests](https://www.bridgecrew.cloud/badges/github/jameswoolfenden/terraform-aws-network-insights/general)](https://www.bridgecrew.cloud/link/badge?vcs=github&fullRepo=JamesWoolfenden%2Fterraform-aws-network-insights&benchmark=INFRASTRUCTURE+SECURITY)
 
 Creates a network-insights Vault, with policy and lock.
 
@@ -34,7 +32,7 @@ No requirements.
 ## Providers
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 
 ## Modules
@@ -44,7 +42,7 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [aws_ec2_network_insights_analysis.analysis](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_network_insights_analysis) | resource |
 | [aws_ec2_network_insights_path.pike](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/ec2_network_insights_path) | resource |
 | [aws_network_interface.destination](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/network_interface) | resource |
@@ -53,7 +51,7 @@ No modules.
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_destination_subnet_id"></a> [destination\_subnet\_id](#input\_destination\_subnet\_id) | n/a | `string` | n/a | yes |
 | <a name="input_protocol"></a> [protocol](#input\_protocol) | n/a | `string` | `"tcp"` | no |
 | <a name="input_source_subnet_id"></a> [source\_subnet\_id](#input\_source\_subnet\_id) | n/a | `string` | n/a | yes |
